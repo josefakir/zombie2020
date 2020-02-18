@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ApplicationProperties</key>
+	<dict>
+		<key>ApplicationPath</key>
+		<string>Applications/¿Soy Zombie?.app</string>
+		<key>CFBundleIdentifier</key>
+		<string>com.graphicsandcode.zombie</string>
+		<key>CFBundleShortVersionString</key>
+		<string>3.0.0</string>
+		<key>CFBundleVersion</key>
+		<string>3.0.0</string>
+		<key>SigningIdentity</key>
+		<string>Apple Development: Bernardo Perez Vazquez (M93PD5NU42)</string>
+		<key>Team</key>
+		<string>3XLP43KTWS</string>
+	</dict>
+	<key>ArchiveVersion</key>
+	<integer>2</integer>
+	<key>CreationDate</key>
+	<date>2020-01-09T00:48:41Z</date>
+	<key>Name</key>
+	<string>¿Soy Zombie?</string>
+	<key>SchemeName</key>
+	<string>¿Soy Zombie?</string>
+</dict>
+</plist>

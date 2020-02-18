@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Soy Zombie</title>
+	<!-- STYLESHEETS -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="js/jalert/jAlert.css">
+	<link href="css/fontawesome/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap-datepicker.standalone.css">
+	<link rel="stylesheet" href="js/owl/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="js/owl/assets/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/bootstrap-toggle.min.css">
+	<link rel="stylesheet" href="css/jTinder.css">
+	<link rel="stylesheet" href="css/circle.css">
+	<link rel="stylesheet" href="js/croppie/croppie.css">
+	<!--<link rel="stylesheet" href="node_modules/cropperjs/dist/cropper.min.css">-->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- SCRIPTS -->
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="js/jalert/jAlert.min.js"></script>
+	<script type="text/javascript" src="js/jalert/jAlert-functions.min.js"></script>
+	<script src="js/owl/owl.carousel.min.js"></script>
+	<script src="js/bootstrap-datepicker.min.js"></script>
+	<script src="js/bootstrap-toggle.min.js"></script>
+	<script src="js/jquery.transform2d.js"></script>
+	<script src="js/jquery.jTinder.js"></script>
+	<script src="js/exif.js"></script>
+	<script src="js/croppie/croppie.min.js"></script>
+	<!--<script src="node_modules/cropperjs/dist/cropper.min.js"></script>
+	<script src="node_modules/jquery-cropper/dist/jquery-cropper.min.js"></script>-->
+
+	<script type="text/javascript" src="js/script.js"></script>
+	
+
+
+
+	<!-- META -->
+	<meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, viewport-fit=cover" />
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' gap:; style-src 'self' 'unsafe-inline'; media-src *" />-->
+</head>
+<body>
+	<header>
+		<a href="#" id="trigger_menu"><i class="fas fa-bars"></i></a>
+	</header>
+	<main id="appContent">
+
+	</main>
+	<footer>
+		<ul id="menu_footer">
+			<li><a href="views/home.html" class="loadview"><i class="fas fa-home"></i></a></li>
+			<li><a href="views/salud-financiera.html" class="loadview"><i class="fas fa-money-bill-wave"></i></a></li>
+			<li><a href="views/metas.html" class="loadview"><i class="fas fa-check"></i></a></li>
+			<li><a href="views/recordatorios.html" class="loadview"><i class="fas fa-clock"></i></a></li>
+			<li><a href="views/configuracion.html" class="loadview"><i class="fas fa-cogs"></i></a></li>
+		</ul>
+	</footer>
+	<div id="loading">
+		<img src="img/loadwalker.gif">
+	</div>
+	<nav id="menu">
+		<ul>
+			<li><a href="views/home.html" class="loadview"><i class="fas fa-home"></i> Inicio</a></li>
+			<li><a href="views/salud-financiera.html" class="loadview"><i class="fas fa-money-bill-wave"></i> Salud Financiera</a></li>
+			<li><a href="views/metas.html" class="loadview"><i class="fas fa-check"></i> Metas</a></li>
+			<li><a href="views/recordatorios.html" class="loadview"> Recordatorios</a></li>
+			<li><a href="views/configuracion.html" class="loadview"><i class="fas fa-cogs"></i> Configuración</a></li>
+			<li><a href="#" id="btn_logout"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</a></li>
+			<li class="tar" style="border-bottom: none"><a href="#" id="cerrar_menu"><i class="fas fa-times"></i></a></li>
+		</ul>
+	</nav>
+	<input type="hidden" id="input_categoria">
+	<input type="hidden" id="id_meta_editar">
+	<script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+</body>
+</html>

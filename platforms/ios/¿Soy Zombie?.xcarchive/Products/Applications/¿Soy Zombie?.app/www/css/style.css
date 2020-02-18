@@ -1,0 +1,85 @@
+@font-face{font-family:'robotolight';src:url(fonts/roboto-light-webfont.woff2) format("woff2"),url(fonts/roboto-light-webfont.woff) format("woff");font-weight:400;font-style:normal}
+#loading{background:#000;top:0;left:0;width:100%;height:100%;position:fixed;z-index:10}
+#loading img{width:100px;position:absolute;top:50%;left:50%;margin-left:-50px}
+body{background:#4BAFBB;color:#fff;font-family:'robotolight'}
+.tac{text-align:center}
+.zombie{width:250px;margin:0 auto;display:block}
+.boton{background:#763289;color:#fff;text-decoration:none;text-align:center;width:250px;padding:10px;margin:0 auto;display:block;border-radius:25px;font-weight:700;text-transform:uppercase}
+.boton:hover{text-decoration:none;color:#fff;opacity:.8}
+header{background:#763289;position:fixed;top:0;width:100%;height:44pt;z-index:2}
+footer{background:#763289;position:fixed;bottom:0;width:100%;height:44pt;z-index:2}
+#appContent{padding-top:44pt;padding-bottom:44pt}
+#trigger_menu{color:#fff;float:right;margin-right:20px;font-size:40px; margin-top: 5px}
+#menu{background:#fff;position:fixed;right:-1px;top:0;height:100%;width:70%;padding:20px;display:none;z-index:1;padding-top:70px}
+#menu ul{list-style:none;padding:0}
+#menu ul li{border-bottom:1px solid #ccc;line-height:70px}
+#menu ul li a{color:#763289;font-size:24px;font-weight:700}
+.tar{text-align:right}
+#menu_footer{width:100%;float:left;padding:0;list-style:none}
+#menu_footer li{float:left;width:20%;text-align:center}
+#menu_footer li a{width:100%;display:block;float:left;color:#fff;font-size:30px;margin-top:5px}
+a.btn_quitar_tarea{width:25px;height:25px;background:#ff6c5c;display:block;color:#fff;border-radius:25px;text-align:center;float:left}
+a#btn_agregar_gasto{position:fixed;width:50px;height:50px;background:#ff6c5c;bottom:50pt;left:6pt;border-radius:25px;color:#fff;cursor:pointer}
+a#btn_agregar_ingreso{position:fixed;width:50px;height:50px;background:#5fed85;bottom:50pt;right:6pt;border-radius:25px;color:#fff;cursor:pointer}
+a#btn_agregar_tarea{width:50px;height:50px;background:#5fed85;border-radius:25px;color:#fff;cursor:pointer;display:block;font-size:25px;padding:6px 15px}
+#btn_agregar_gasto i{font-size:35px;margin:8px 9px}
+#btn_agregar_ingreso i{font-size:35px;margin:8px 9px}
+#form_salud{position:fixed;width:100%;height:320px;bottom:42pt;background:#fff;z-index:2;padding-top:25px;display:none}
+#cerrar_form_salud{position:absolute;right:5px;top:-25px;font-size:28px;z-index:2;width:50px;height:50px;background:#763289;text-align:center;color:#fff;border-radius:25px;padding-top:3px}
+.form-check-label{color:#666}
+.gris{color:#666}
+#tabla_salud_financiera{width:100%;background:#fff;color:#999;margin-bottom:70px}
+#tabla_salud_financiera th{padding:10px}
+.morado{color:#763289}
+.separador{width:100%;height:5px;float:left;display:block;background:#763289}
+#carrusel_metas{background:#fff;padding-bottom:20px}
+img.icono{width:100px!important;display:block;margin:20px auto}
+.botonmetas{display:block;width:180px;background:#fff;color:#763289;border:1px solid #763289;border-radius:15px;text-align:center;padding:10px 0;margin:0 auto}
+.progress{width:150px;height:150px;background:none;position:relative}
+.progress::after{content:"";width:100%;height:100%;border-radius:50%;border:6px solid #eee;position:absolute;top:0;left:0}
+.progress>span{width:50%;height:100%;overflow:hidden;position:absolute;top:0;z-index:1}
+.progress .progress-left{left:0}
+.progress .progress-bar{width:100%;height:100%;background:none;border-width:6px;border-style:solid;position:absolute;top:0}
+.progress .progress-left .progress-bar{left:100%;border-top-right-radius:80px;border-bottom-right-radius:80px;border-left:0;-webkit-transform-origin:center left;transform-origin:center left}
+.progress .progress-right{right:0}
+.progress .progress-right .progress-bar{left:-100%;border-top-left-radius:80px;border-bottom-left-radius:80px;border-right:0;-webkit-transform-origin:center right;transform-origin:center right}
+.progress .progress-value{position:absolute;top:0;left:0}
+.w50{width:50%;float:left;margin:20px 0}
+.white{color:#fff}
+.white:hover{color:#fff}
+.etiqueta_tarea{float:left;margin-right:10px;display:block;width:87%}
+#lista_tareas li{width:100%;float:left;margin:5px 0}
+.titulo_meta{width:100%;background:#763289;color:#fff;padding:10px;font-weight:700}
+ul.lista_ver_metas{list-style:none;padding:0}
+ul.lista_ver_metas li{background:#eee;padding:10px;color:gray}
+ul.lista_ver_metas li:nth-child(odd){background:#fff;color:#763289}
+.meta{margin-bottom:50px;    border-bottom: 1px solid;}
+.btn_editar_meta{float:right;background:#ffd666;width:30px;height:29px;text-align:center;border-radius:25px;color:#fff;margin-right:10px}
+.btn_completar_meta{float:right;background:#5fed85;width:30px;height:29px;text-align:center;border-radius:25px;color:#fff}
+.btn_completar_meta:hover{text-decoration:none;color:#fff}
+.btn_editar_meta:hover{text-decoration:none;color:#fff}
+img#avatar{width:150px;margin:0 auto;display:block;border-radius:75px}
+.toggle-off.btn{background:#fff}
+.toggle{margin-left:10px}
+#hora_recordatorio_tarde{display:none}
+#hora_recordatorio_manana{display:none}
+span.nombre_meta_tinder{font-size:17px}
+span.nombre_ambito_tinder{font-size:17px}
+canvas#canvas {width: 250px;height: 250px;margin: 20px auto;display: block;display: none}
+input#inp {display: none;}
+#preview{width: 300px;height: 300px;margin: 20px auto;}
+#btn_guardar_avatar{display: none; margin-bottom: 20px; margin-top: 20px}
+#btn_guardar_alertas_manana_noche{display: none;}
+#btn_iniciar_sesion_fb{width: 250px;margin: 0 auto;display: block;margin-top: 10px;}
+#btn_iniciar_sesion_fb img{width: 100%} 
+#btn_iniciar_sesion{margin-bottom: 10px}
+.regresar{color: #fff; }
+.regresar:hover{text-decoration: none;color: #fff; }
+.clear{clear: both}
+#form_tarea{position:fixed;width:100%;height:320px;bottom:42pt;background:#fff;z-index:2;padding-top:25px;display:none}
+#cerrar_form_tarea{position:absolute;right:5px;top:-25px;font-size:28px;z-index:2;width:50px;height:50px;background:#763289;text-align:center;color:#fff;border-radius:25px;padding-top:3px}
+.crop{width: 300px;height: 300px;margin:20px auto;display: none;overflow: hidden;background: #0000001c}
+#image{width: 100%}
+a.rotateleft {background: #763289;color: #fff;width: 60px;display: block;text-align: center;border-radius: 60px;font-size: 40px;float: left;}
+a.rotateright {background: #763289;color: #fff;width: 60px;display: block;text-align: center;border-radius: 60px;font-size: 40px;float: left;}
+#rotatebuttons{width: 120px;height: 60px;margin: 0 auto;display: none}
