@@ -1,0 +1,6 @@
+framework module Pods__Soy_Zombie_ {
+  umbrella header "Pods-¿Soy Zombie?-umbrella.h"
+
+  export *
+  module * { export * }
+}

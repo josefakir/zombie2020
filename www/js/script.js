@@ -45,6 +45,7 @@ function refreshSaludFinanciera(user_id,mes,anio){
 				output +='<td>'+value.etiqueta+'</td>';
 				output +='<td>'+traducirTipoGasto(value.tipo)+'</td>';
 				output +='<td>'+formatter.format(value.cantidad)+'</td>';
+				output +='<td><a href=""><i class="fas fa-minus boton_menos eliminar_movimiento_financiero" data-id="'+value.id+'"></i></a></td>';
 				output +='</tr>';
 
 				if(value.tipo==='1' || value.tipo==='2'){
@@ -215,7 +216,16 @@ function unserialize(data){
 	};  
 	return _unserialize(data, 0)[2];  
 }  
+	var hist = ['home.html'];
+
 function loadView(path,callback){
+	if(hist.length > 2){
+		hist.shift(); 
+	}
+	hist.push(path);
+	var back = hist[1];
+	$('#boton_back').attr('href',back);
+	$('#boton_back').show();
 	$.ajax({
 		url : path,
 		complete : function(){
@@ -234,7 +244,17 @@ function loadView(path,callback){
 					refreshSaludFinanciera( localStorage.getItem('user_id'),$("#input_mes_salud_financiera").val(),$("#input_anio_salud_financiera").val());
 					break;
 					case 'views/home.html':
-						
+						var d = new Date();
+						var n = d.getHours();
+						if(n>12){
+							//Esconder boton recordar
+							$('#btn_recordar').hide();
+							$('#btn_completar').show();
+						}else{
+							//Esconder boton hacer
+							$('#btn_completar').hide();
+							$('#btn_recordar').show();
+						}
 						$.ajax({
 							url : URL_WS+'avance_usuario/'+localStorage.getItem('user_id'),
 							headers: {
@@ -281,7 +301,31 @@ function loadView(path,callback){
 								}
 							}
 						})
-
+						
+						$(document).on("click", ".eliminar_movimiento_financiero", function(e) { 
+							e.preventDefault();
+							var id_movimiento = $(this).attr('data-id');
+							confirm(function(){
+								$.ajax({
+									headers: {
+										'apikey': localStorage.getItem('apikey')
+									},
+									url : URL_WS+'eliminar-movimiento-financiero/'+id_movimiento,
+									beforeSend : function(){
+										$('#loading').show();
+									},
+									complete : function(){
+										$('#loading').hide();
+									},
+									success : function(data){
+										refreshSaludFinanciera( localStorage.getItem('user_id'),$("#input_mes_salud_financiera").val(),$("#input_anio_salud_financiera").val());
+										successAlert('Éxito', 'El movimiento fue eliminado correctamente');
+									}
+								})
+							}, function(){
+								  //alert('no'); NADA
+							});
+						});
 
 					break;
 					case 'views/metas.html':
@@ -335,11 +379,16 @@ function loadView(path,callback){
 					})
 					break;
 					case 'views/recordatorios.html':
+
 					$('.datepicker').datepicker({
-						autoclose : true
+						autoclose : true,
+						todayHighlight: true
 					});
 					$('.datepicker').on('focus',function(){
-					$(this).trigger('blur');
+						$(this).trigger('blur');
+						$.each( $('td.day'), function( i, l ){
+							console.log( "Index #" + i + ": " + l );
+						});
 					});
 					break;
 					case 'views/configuracion.html':
@@ -534,7 +583,82 @@ function loadView(path,callback){
 						}
 					})
 					break;
-				}
+					case 'views/recordatorio-manana.html':
+						$.ajax({
+							url : URL_WS+'metas/'+localStorage.getItem('user_id'),
+							headers: {
+								'apikey': localStorage.getItem('apikey')
+							},
+							beforeSend : function(){
+								$('#loading').show();
+							},
+							complete : function(){
+								$('#loading').hide();
+							},
+							success : function(data){
+								console.log(data);
+								var espiritual = data[0].espiritual;
+								var circulocercano = data[1].circulocercano;
+								var fisica = data[2].fisica;
+								var laboral = data[3].laboral;
+								var responsabilidad = data[4].responsabilidad;
+								var output = '';
+								if(espiritual.length>0){
+									output += '<li><strong>Espiritual</strong></li>';
+									$.each(espiritual, function( index, value ) {
+										output += '<li class="pl10"><strong>'+value.etiqueta+'</strong></li>';
+										tareas = unserialize(value.tareas);
+										$.each( tareas, function( key, value ) {
+											output+='<li class="pl20">'+value+'</li>';
+										});
+									});
+								}
+								if(circulocercano.length>0){
+									output += '<li><strong>Círculo Cercano</strong></li>';
+									$.each(circulocercano, function( index, value ) {
+										output += '<li class="pl10"><strong>'+value.etiqueta+'</strong></li>';
+										tareas = unserialize(value.tareas);
+										$.each( tareas, function( key, value ) {
+											output+='<li class="pl20">'+value+'</li>';
+										});
+									});
+								}
+								if(fisica.length>0){
+									output += '<li><strong>Físico</strong></li>';
+									$.each(fisica, function( index, value ) {
+										output += '<li class="pl10"><strong>'+value.etiqueta+'</strong></li>';
+										tareas = unserialize(value.tareas);
+										$.each( tareas, function( key, value ) {
+											output+='<li class="pl20">'+value+'</li>';
+										});
+									});
+								}
+								if(laboral.length>0){
+									output += '<li><strong>Laboral</strong></li>';
+									$.each(laboral, function( index, value ) {
+										output += '<li class="pl10"><strong>'+value.etiqueta+'</strong></li>';
+										tareas = unserialize(value.tareas);
+										$.each( tareas, function( key, value ) {
+											output+='<li class="pl20">'+value+'</li>';
+										});
+									});
+								}
+								if(responsabilidad.length>0){
+									output += '<li><strong>Responsabilidad Social</strong></li>';
+									$.each(responsabilidad, function( index, value ) {
+										output += '<li class="pl10"><strong>'+value.etiqueta+'</strong></li>';
+										tareas = unserialize(value.tareas);
+										$.each( tareas, function( key, value ) {
+											output+='<li class="pl20">'+value+'</li>';
+										});
+									});
+								}
+								
+								$('#lista_tareas_diaria').html(output);
+							}
+						})
+					break;
+					}
 			}
 		});
 }
@@ -816,7 +940,7 @@ $(document).on("click", ".btn_completar_meta", function(e) {
 		})
 	}, function(){
 	  	//alert('no'); NADA
-	  });
+	});
 });
 $(document).on("click", ".btn_editar_meta", function(e) { 
 	e.preventDefault();
@@ -869,6 +993,7 @@ $(document).on("change", "#minuto_manana", function(e) {
 			trigger: { every: { hour: hora, minute: minuto } },
     		foreground: true    		
 		});
+		
 	}
 });
 

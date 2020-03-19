@@ -17,6 +17,7 @@
 		302D95F114D2391D003F00A1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302D95EF14D2391D003F00A1 /* MainViewController.m */; };
 		302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302D95F014D2391D003F00A1 /* MainViewController.xib */; };
 		311D44F7C99D449299221351 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 117606BF2E874127AA88CB98 /* AudioToolbox.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		3376328F9B65473385E15F88 /* FacebookConnectPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = E3C10CB2BCC940009FE13F94 /* FacebookConnectPlugin.m */; };
 		3CFCD6285EEB4F29B7015FB3 /* CDVBattery.m in Sources */ = {isa = PBXBuildFile; fileRef = ABADCBB33F0D4225A7DB0511 /* CDVBattery.m */; };
 		3D58580D8F844400802455CD /* CDVGlobalization.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A20D4A4C6D44DF820871CC /* CDVGlobalization.m */; };
 		493BAB74762F4E03A57F87EC /* UNUserNotificationCenter+APPLocalNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C614ECC1E04AA5B4A3F526 /* UNUserNotificationCenter+APPLocalNotification.m */; };
@@ -31,6 +32,7 @@
 		729CDBED26A3422E8D1E05C6 /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = A29687E0AAA146FDB1E08C7B /* CDVDevice.m */; };
 		757F2C7857484DDCAD102FA6 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3347E48DF3A2472CA19DB23D /* CoreTelephony.framework */; };
 		7FCBD1AC0A5D46B993E96AAB /* CDVCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 19937E88F310435BB5AF6894 /* CDVCapture.m */; };
+		80BA43756E8318D7FE83D504 /* Pods__Soy_Zombie_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CAE8190CD295B395E258F3A /* Pods__Soy_Zombie_.framework */; };
 		8393D7DA76274563A005A7FC /* UNNotificationRequest+APPLocalNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = C8EFBE9EAE7F4BEE85EB4319 /* UNNotificationRequest+APPLocalNotification.m */; };
 		9F34309621644FBC98DC7BF0 /* APPLocalNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 96256B16EB4B49AEA910B6A0 /* APPLocalNotification.m */; };
 		A369D97947ED42BE867795CC /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1272F193DA914E67A2B156D0 /* libz.tbd */; };
@@ -82,6 +84,7 @@
 		023FB01537544F2589B5F4CC /* CDVStatusBar.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVStatusBar.h; path = "cordova-plugin-statusbar/CDVStatusBar.h"; sourceTree = "<group>"; };
 		0A253A285F27494C8A47D54C /* CDVAssetLibraryFilesystem.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVAssetLibraryFilesystem.m; path = "cordova-plugin-file/CDVAssetLibraryFilesystem.m"; sourceTree = "<group>"; };
 		0AC4EDCB471544D9B8198756 /* APPNotificationContent.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = APPNotificationContent.m; path = "cordova-plugin-local-notification/APPNotificationContent.m"; sourceTree = "<group>"; };
+		0CAE8190CD295B395E258F3A /* Pods__Soy_Zombie_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods__Soy_Zombie_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		117606BF2E874127AA88CB98 /* AudioToolbox.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		1239E8080B8445ECB5BF25F2 /* APPNotificationOptions.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = APPNotificationOptions.m; path = "cordova-plugin-local-notification/APPNotificationOptions.m"; sourceTree = "<group>"; };
 		1272F193DA914E67A2B156D0 /* libz.tbd */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
@@ -111,6 +114,7 @@
 		33619442C80845578D16E5D8 /* UNNotificationRequest+APPLocalNotification.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "UNNotificationRequest+APPLocalNotification.h"; path = "cordova-plugin-local-notification/UNNotificationRequest+APPLocalNotification.h"; sourceTree = "<group>"; };
 		34382D6A40D94ED99F5C2A7B /* CDVAssetLibraryFilesystem.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVAssetLibraryFilesystem.h; path = "cordova-plugin-file/CDVAssetLibraryFilesystem.h"; sourceTree = "<group>"; };
 		3BB081D728DA402382707C3E /* CDVVibration.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVVibration.m; path = "cordova-plugin-vibration/CDVVibration.m"; sourceTree = "<group>"; };
+		4093179D421464F880C85211 /* Pods-¿Soy Zombie?.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-¿Soy Zombie?.debug.xcconfig"; path = "Target Support Files/Pods-¿Soy Zombie?/Pods-¿Soy Zombie?.debug.xcconfig"; sourceTree = "<group>"; };
 		4170574321CA403EB753FE18 /* CDVGlobalization.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVGlobalization.h; path = "cordova-plugin-globalization/CDVGlobalization.h"; sourceTree = "<group>"; };
 		550C66EF74E74AC4ACD02793 /* APPBadge.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = APPBadge.m; path = "cordova-plugin-badge/APPBadge.m"; sourceTree = "<group>"; };
 		563DF7F67FD142FCA941C78F /* CDVBattery.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVBattery.h; path = "cordova-plugin-battery-status/CDVBattery.h"; sourceTree = "<group>"; };
@@ -141,13 +145,16 @@
 		BD47CB777F114D069179AFFB /* CDVJpegHeaderWriter.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVJpegHeaderWriter.m; path = "cordova-plugin-camera/CDVJpegHeaderWriter.m"; sourceTree = "<group>"; };
 		BDF8828A9D0D44BF80291BE6 /* CDVConnection.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVConnection.h; path = "cordova-plugin-network-information/CDVConnection.h"; sourceTree = "<group>"; };
 		C8EFBE9EAE7F4BEE85EB4319 /* UNNotificationRequest+APPLocalNotification.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = "UNNotificationRequest+APPLocalNotification.m"; path = "cordova-plugin-local-notification/UNNotificationRequest+APPLocalNotification.m"; sourceTree = "<group>"; };
+		CB7449B6B843406F91451BA2 /* FacebookConnectPlugin.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = FacebookConnectPlugin.h; path = "cordova-plugin-facebook4/FacebookConnectPlugin.h"; sourceTree = "<group>"; };
 		CD9B5E7CB7CF4A93AFFDFA93 /* CDVCapture.bundle */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.plug-in"; path = CDVCapture.bundle; sourceTree = "<group>"; };
 		D1F8C027E50B4D16815DE819 /* CDVVibration.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVVibration.h; path = "cordova-plugin-vibration/CDVVibration.h"; sourceTree = "<group>"; };
 		D6AD1459FD52434BAF23B8AE /* CDVNotification.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVNotification.h; path = "cordova-plugin-dialogs/CDVNotification.h"; sourceTree = "<group>"; };
 		D838ACF554EC4868849B90E9 /* CDVDevice.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVDevice.h; path = "cordova-plugin-device/CDVDevice.h"; sourceTree = "<group>"; };
 		DD2D18140952489CA812C089 /* APPBadge.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = APPBadge.h; path = "cordova-plugin-badge/APPBadge.h"; sourceTree = "<group>"; };
 		E09A4ECDBBC74C3D915EFA41 /* UIImage+CropScaleOrientation.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = "UIImage+CropScaleOrientation.m"; path = "cordova-plugin-camera/UIImage+CropScaleOrientation.m"; sourceTree = "<group>"; };
+		E3C10CB2BCC940009FE13F94 /* FacebookConnectPlugin.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = FacebookConnectPlugin.m; path = "cordova-plugin-facebook4/FacebookConnectPlugin.m"; sourceTree = "<group>"; };
 		E6CD1AE1A2564DC78FF2E4C8 /* CDVFile.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVFile.h; path = "cordova-plugin-file/CDVFile.h"; sourceTree = "<group>"; };
+		E8382C7322F255424EC4BC87 /* Pods-¿Soy Zombie?.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-¿Soy Zombie?.release.xcconfig"; path = "Target Support Files/Pods-¿Soy Zombie?/Pods-¿Soy Zombie?.release.xcconfig"; sourceTree = "<group>"; };
 		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
 		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
@@ -173,6 +180,7 @@
 				E89705C99ADD413786A95032 /* EventKit.framework in Frameworks */,
 				FB500CAF5D27478EB17BD806 /* EventKitUI.framework in Frameworks */,
 				1FF7684DE0064AFAA9A43E7B /* UserNotifications.framework in Frameworks */,
+				80BA43756E8318D7FE83D504 /* Pods__Soy_Zombie_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,6 +221,7 @@
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				631702631B9A84362D7B0C60 /* Pods */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -255,6 +264,7 @@
 				159595AC48EA4C19A593ABB5 /* EventKit.framework */,
 				8C21CEE5153C4B818DB3973A /* EventKitUI.framework */,
 				B263DFA3747A475EA80288FD /* UserNotifications.framework */,
+				0CAE8190CD295B395E258F3A /* Pods__Soy_Zombie_.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -328,10 +338,21 @@
 				A3E65645FEDF404286D062C4 /* APPNotificationOptions.h */,
 				B288884EA66142DCBD94DD44 /* UNUserNotificationCenter+APPLocalNotification.h */,
 				33619442C80845578D16E5D8 /* UNNotificationRequest+APPLocalNotification.h */,
+				E3C10CB2BCC940009FE13F94 /* FacebookConnectPlugin.m */,
+				CB7449B6B843406F91451BA2 /* FacebookConnectPlugin.h */,
 			);
 			name = Plugins;
 			path = "¿Soy Zombie?/Plugins";
 			sourceTree = SOURCE_ROOT;
+		};
+		631702631B9A84362D7B0C60 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4093179D421464F880C85211 /* Pods-¿Soy Zombie?.debug.xcconfig */,
+				E8382C7322F255424EC4BC87 /* Pods-¿Soy Zombie?.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
 		};
 		EB87FDF11871DA420020F90C /* Staging */ = {
 			isa = PBXGroup;
@@ -349,10 +370,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "¿Soy Zombie?" */;
 			buildPhases = (
+				09836BC3935570816E92EF99 /* [CP] Check Pods Manifest.lock */,
 				304B58A110DAC018002A0835 /* Copy www directory */,
 				1D60588D0D05DD3D006BFB54 /* Resources */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
 				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+				76378E7CE227155CDFDA6100 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -388,6 +411,7 @@
 				Base,
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			productRefGroup = 19C28FACFE9D520D11CA2CBB /* Products */;
 			projectDirPath = "";
 			projectReferences = (
 				{
@@ -435,6 +459,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		09836BC3935570816E92EF99 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-¿Soy Zombie?-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		304B58A110DAC018002A0835 /* Copy www directory */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -448,6 +494,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"$SRCROOT/¿Soy Zombie?/Scripts/copy-www-build-step.sh\"";
+			showEnvVarsInLog = 0;
+		};
+		76378E7CE227155CDFDA6100 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-¿Soy Zombie?/Pods-¿Soy Zombie?-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-¿Soy Zombie?/Pods-¿Soy Zombie?-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -483,6 +551,7 @@
 				0EE5CA6929BC499280B36E28 /* APPNotificationOptions.m in Sources */,
 				493BAB74762F4E03A57F87EC /* UNUserNotificationCenter+APPLocalNotification.m in Sources */,
 				8393D7DA76274563A005A7FC /* UNNotificationRequest+APPLocalNotification.m in Sources */,
+				3376328F9B65473385E15F88 /* FacebookConnectPlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
